@@ -47,5 +47,7 @@ print(len(mb_configuration_details))
 import pandas as pd
 df=pd.DataFrame({'Product Name':mb_name,'configuration_details':mb_configuration_details,'image_links':mb_images_link,'Price':mb_price})
 
+print(df)  #it will print csv file
+
 df.to_excel(r'C:\Users\home\OneDrive\Documents\py\project.xlsx', sheet_name='Sheet_name_1')
     
